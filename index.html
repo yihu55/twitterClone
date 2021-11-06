@@ -14,49 +14,69 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-4 navigationbar">
+            <div class="col-lg-2 col-md-3 navigationbar">
                 <ul class="nav flex-column">
 
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i>Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <span><i class="fas fa-home"></i></span>
+                            <span class="nav-item__text">Home</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-hashtag"></i>Explore</a>
+                        <a class="nav-link" href="#">
+                            <span><i class="fas fa-hashtag"></i></span>
+                            <span class="nav-item__text">Explore</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="far fa-bell"></i>Notification</a>
+                        <a class="nav-link" href="#">
+                            <span><i class="far fa-bell"></i></span>
+                            <span class="nav-item__text">Notification</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="far fa-envelope"></i>Messages</a>
+                        <a class="nav-link" href="#">
+                            <span><i class="far fa-envelope"></i></span>
+                            <span class="nav-item__text">Messages</span></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="far fa-bookmark"></i>Bookmarks</a>
+                        <a class="nav-link" href="#">
+                            <span><i class="far fa-bookmark"></i><span>
+                            <span class="nav-item__text">Bookmarks</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="far fa-list-alt"></i>Lists</a>
+                        <a class="nav-link" href="#">
+                            <span><i class="far fa-list-alt"></i><span>
+                            <span class="nav-item__text">Lists</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="far fa-user-circle"></i>Profile</a>
+                        <a class="nav-link" href="#">
+                            <span><i class="far fa-user-circle"></i></span>
+                            <span class="nav-item__text">Profile</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-ellipsis-h"></i>More</a>
+                        <a class="nav-link" href="#">
+                            <span><i class="fas fa-ellipsis-h"></i></span>
+                            <span class="nav-item__text">More</span></a>
                     </li>
                 </ul>
-                <button class="btn btn-dark twittericon">Twitter</button>
-                <div class="user_account"><img class="icon" src="https://pbs.twimg.com/profile_images/1455181325489553418/RbbUMWoQ_bigger.png" alt="icon">
+                <div>
+                    <button class="btn btn-dark twittericon">Twitter</button>
+                </div>
+                <div class="user_account">
+                    <a href="#"><img class="account_icon" src="https://pbs.twimg.com/profile_images/1455181325489553418/RbbUMWoQ_bigger.png" alt="icon"></a>
                     <a href="mailto:veronicayi@msn.com" class="text-decoration-none">veronicayi@msn.com</a><br>
-                    <span>Yi</span></div>
+                    <span>Yi</span>
+                </div>
 
             </div>
-            <div class="col-lg-6 col-md-8 column2">
-                <!--class="fixed-top bg-light"-->
-                <h2><a href="#" class="home">Home<i class="far fa-star"></i></a></h2>
-
-                <hr>
+            <div class="col-lg-7 col-md-9 column2">
+                <div class="sticky-top bg-light">
+                    <h2><a href="#" class="home ps-3">Home<i class="far fa-star"></i></a></h2>
+                    <hr>
+                </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-2">
@@ -90,9 +110,9 @@
                             <img class="articleImage" src="https://images.unsplash.com/photo-1527334919515-b8dee906a34b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHdpdGNofGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="twitch">
                             <p></p>
                             <div class="comments">
-                                <i class="far fa-comment"></i>
-                                <i class="far fa-heart"></i>
-                                <i class="far fa-thumbs-up"></i>
+                                <i class="far fa-comment">1</i>
+                                <i class="fas fa-retweet">2</i>
+                                <i class="far fa-heart">3</i>
                                 <i class="far fa-share-square"></i>
                             </div>
                         </div>
@@ -110,16 +130,16 @@
                             <img class="articleImage" src="https://pbs.twimg.com/card_img/1455210425801392136/durbBC-O?format=jpg&name=small" alt="speaker">
                             <p></p>
                             <div class="comments">
-                                <i class="far fa-comment"></i>
-                                <i class="far fa-heart"></i>
-                                <i class="far fa-thumbs-up"></i>
+                                <i class="far fa-comment">29</i>
+                                <i class="fas fa-retweet">116</i>
+                                <i class="far fa-heart">52</i>
                                 <i class="far fa-share-square"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <hr>
-                <h2>Suggested for you</h2>
+                <h2 class="ps-3">Suggested for you</h2>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-2">
@@ -137,10 +157,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="search-box">
-                    <input class="search-txt" type="text" placeholder="Search twitter">
-                    <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+            <div class="col-lg-3 col-md-6 column3">
+                <div class="sticky-top bg-white pb-2">
+                    <div class="search-box">
+                        <input class="search-txt" type="text" placeholder="Search twitter">
+                        <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+                    </div>
                 </div>
                 <div class="trends_for_you">
                     <h3>Trends for you</h3>
